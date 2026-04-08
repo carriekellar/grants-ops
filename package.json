@@ -1,0 +1,13 @@
+{
+  "name": "grants-ops",
+  "version": "1.0.0",
+  "description": "AI-powered grant search and application pipeline built on Claude Code",
+  "type": "module",
+  "scripts": {
+    "verify": "node verify-pipeline.mjs",
+    "normalize": "node normalize-statuses.mjs",
+    "update": "node update-system.mjs check"
+  },
+  "keywords": ["grants", "grants.gov", "federal-grants", "claude-code", "automation"],
+  "license": "MIT"
+}

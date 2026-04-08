@@ -1,0 +1,13 @@
+node_modules/
+output/*
+!output/.gitkeep
+batch/tracker-additions/*
+!batch/tracker-additions/.gitkeep
+batch/logs/
+batch/batch-state.tsv
+batch/batch-input.tsv
+nofos/*
+!nofos/.gitkeep
+*.lock
+.DS_Store
+/tmp/

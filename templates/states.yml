@@ -1,0 +1,54 @@
+states:
+  - id: discovered
+    label: Discovered
+    aliases: [found, new, scanned]
+    description: Found via scan, not yet evaluated
+    dashboard_group: discovered
+
+  - id: evaluated
+    label: Evaluated
+    aliases: [reviewed, assessed]
+    description: Full evaluation completed
+    dashboard_group: evaluated
+
+  - id: preparing
+    label: Preparing
+    aliases: [drafting, in_progress, writing]
+    description: Application in progress
+    dashboard_group: preparing
+
+  - id: applied
+    label: Applied
+    aliases: [submitted, sent]
+    description: Application submitted to Grants.gov or agency portal
+    dashboard_group: applied
+
+  - id: under_review
+    label: Under Review
+    aliases: [pending_review, in_review]
+    description: Agency confirmed receipt, in review
+    dashboard_group: under_review
+
+  - id: awarded
+    label: Awarded
+    aliases: [funded, approved, won]
+    description: Grant awarded
+    dashboard_group: awarded
+
+  - id: not_funded
+    label: Not Funded
+    aliases: [rejected, declined, unfunded]
+    description: Application not selected
+    dashboard_group: not_funded
+
+  - id: withdrawn
+    label: Withdrawn
+    aliases: [cancelled, retracted]
+    description: Application withdrawn by org
+    dashboard_group: withdrawn
+
+  - id: skip
+    label: SKIP
+    aliases: [no_apply, pass, ineligible]
+    description: Does not fit, do not apply
+    dashboard_group: skip

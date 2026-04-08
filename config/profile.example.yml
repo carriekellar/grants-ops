@@ -1,0 +1,106 @@
+# grants-ops Organization Profile
+# Copy to config/profile.yml and fill in your details
+
+organization:
+  legal_name: "Your Organization Name"
+  ein: "XX-XXXXXXX"
+  uei: "XXXXXXXXXXXX"
+  entity_type: nonprofit_501c3  # See scan.md for full mapping
+  address:
+    street: "123 Main St"
+    city: "Your City"
+    state: "ST"
+    zip: "00000"
+    country: "USA"
+  founded_year: 2010
+  staff_size: 25
+  annual_budget: 2000000
+
+sam_registration:
+  status: active  # active | pending | expired | not_registered
+  expiration_date: "2027-01-15"
+  uei: "XXXXXXXXXXXX"  # Same as organization.uei
+
+contacts:
+  authorized_representative:
+    name: "Jane Doe"
+    title: "Executive Director"
+    email: "jane@example.org"
+    phone: "555-000-0000"
+  e_business_poc:
+    name: "John Smith"
+    email: "john@example.org"
+  grants_manager:
+    name: "Maria Garcia"
+    email: "maria@example.org"
+
+target_grants:
+  focus_areas:
+    - "workforce development"
+    - "youth employment"
+    - "STEM education"
+  eligible_categories:
+    # Use official Grants.gov funding activity category codes
+    - code: "IS"
+      name: "Income Security and Social Services"
+    - code: "ED"
+      name: "Education"
+    - code: "HL"
+      name: "Health"
+  preferred_agencies:
+    - code: "HHS"
+      name: "Department of Health and Human Services"
+    - code: "ED"
+      name: "Department of Education"
+    - code: "DOL"
+      name: "Department of Labor"
+
+compliance:
+  indirect_cost_rate:
+    type: de_minimis_10  # negotiated | de_minimis_10 | none
+    rate: 10
+    cognizant_agency: ""  # Only for negotiated rates
+    agreement_expiration: ""  # Only for negotiated rates
+  single_audit:
+    status: not_applicable  # compliant | needed | not_applicable
+    last_audit_date: ""
+    threshold_met: false  # true if org spends $750K+ federal funds/year
+
+budget_defaults:
+  escalation_rate: 3  # Annual % increase for personnel
+  equipment_threshold: 5000  # $ threshold for equipment vs supplies
+  fringe_rate: 30  # % of personnel for fringe benefits
+  travel_per_diem:
+    domestic: 200  # $/day
+    lodging: 150  # $/night
+
+narrative:
+  mission: >
+    [Your org's mission statement — one paragraph, ~100 words.
+    Should be compelling, specific, and jargon-free.]
+  differentiator: >
+    [What makes your org different from every other applicant?
+    2-3 sentences that would stick with a reviewer after reading 50 proposals.]
+
+past_performance:
+  # List your most relevant grants/contracts
+  - agency: "HHS"
+    program: "Community Health Program"
+    amount: 500000
+    year: 2023
+    period: "2023-2026"
+    outcomes: "Served 1,200 participants, 85% achieved health targets"
+  - agency: "DOL"
+    program: "Youth Employment Initiative"
+    amount: 250000
+    year: 2022
+    period: "2022-2024"
+    outcomes: "Placed 200 youth in jobs, 90% retention at 6 months"
+
+discovery:
+  scan_interval_days: 7  # How often to scan for new grants
+  rss_feeds:
+    # Only add feeds you've verified work. Most agencies don't have RSS.
+    # - url: "https://grants.nih.gov/funding/searchGuide/rss.xml"
+    #   agency: "NIH"
+    #   label: "NIH Guide"
