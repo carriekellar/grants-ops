@@ -1,3 +1,9 @@
+---
+name: grants-ops
+description: AI grant search command center -- discover, evaluate, and apply to government grants
+user_invocable: true
+---
+
 # Skill: grants-ops
 
 AI grant search command center -- discover, evaluate, and apply to government grants
@@ -18,6 +24,7 @@ AI grant search command center -- discover, evaluate, and apply to government gr
 | outreach | outreach | outreach.md |
 | compliance | compliance | compliance.md |
 
+All mode files live in `modes/` at the project root (e.g., `modes/evaluate.md`).
 Each mode file specifies its own context reads (_shared.md, _profile.md, profile.yml, etc.).
 The router just picks the mode — it does NOT manage context loading.
 
